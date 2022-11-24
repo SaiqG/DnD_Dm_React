@@ -12,10 +12,6 @@
 }
 
 .bg__img {
-    /* display: flex;
-    /* flex-direction: column;
-    justify-content: center; */
-    /* width: 100%; */
     height: 100vh;
     background: url("../../img/back.png") center no-repeat;
     background-size: cover;

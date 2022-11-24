@@ -1,8 +1,8 @@
 import './Spells.css'
 
-export default function Spells(act) {
+export default function Spells(show) {
     return (
-        <div className={act.act ? "show__list active" : "show__list"} alt="sry">
+        <div className={show.active ? "show__list active" : "show__list"} >
         </div>
     )
 }

@@ -14,7 +14,7 @@ const addSign = (stat) => {
 
 
 
-function CharList(act) {
+function CharList(show) {
     const [str, setStr] = useState(10)
     const [dex, setDex] = useState(10)
     const [vit, setVit] = useState(10)
@@ -55,8 +55,8 @@ function CharList(act) {
 
 
     return (
-        <div className={act.act ? "show__list active" : "show__list"} >
-            <img className="img_menu" src={require("../../../img/stats__bg.png")} alt="img" />
+        <div className={show.active ? "show__list active" : "show__list"} >
+            <img className="img_menu" src={require("../../../img/stats__bg.png")} alt="menu img" />
             {/* stats colculate */}
             <div className="stats__pos">
                 <input className="stats" id="str" type="number" min="0" max="30" defaultValue="10" onChange={(e) => setStr(e.target.value)} />
@@ -84,7 +84,7 @@ function CharList(act) {
                     <div className="ch__st">{strS}<label className="stat__name">запугивание</label><input type="checkbox" onChange={(e) => { addMast(e, mast) }}
                         className="custom__checkbox" /></div>
                 </div>
-                <div style={{ paddingTop: 5 }} className="chaild__stats__box" id="dexSub">
+                <div style={{ paddingTop: 5 }} className="chaild__stats__box" id={dexS}>
                     <div className="ch__st">{dexS}<label className="stat__name">спасброски</label><input type="checkbox" onChange={(e) => { addMast(e, mast, true) }}
                         className="custom__checkbox" /></div>
                     <div className="ch__st">{dexS}<label className="stat__name">акробатика</label><input type="checkbox" onChange={(e) => { addMast(e, mast) }}
@@ -94,11 +94,11 @@ function CharList(act) {
                     <div className="ch__st">{dexS}<label className="stat__name">скрытность</label><input type="checkbox" onChange={(e) => { addMast(e, mast) }}
                         className="custom__checkbox" /></div>
                 </div>
-                <div style={{ paddingTop: 3 }} className="chaild__stats__box" id="bdySub">
+                <div style={{ paddingTop: 3 }} className="chaild__stats__box" id={vitS}>
                     <div className="ch__st">{vitS}<label className="stat__name">спасброски</label><input type="checkbox" onChange={(e) => { addMast(e, mast, true) }}
                         className="custom__checkbox" /></div>
                 </div>
-                <div style={{ paddingTop: 2 }} className="chaild__stats__box" id="intSub">
+                <div style={{ paddingTop: 2 }} className="chaild__stats__box" id={intS}>
                     <div className="ch__st">{intS}<label className="stat__name">спасброски</label><input type="checkbox" onChange={(e) => { addMast(e, mast, true) }}
                         className="custom__checkbox" /></div>
                     <div className="ch__st">{intS}<label className="stat__name">магия</label><input type="checkbox" onChange={(e) => { addMast(e, mast) }}
@@ -112,7 +112,7 @@ function CharList(act) {
                     <div className="ch__st">{intS}<label className="stat__name">религия</label><input type="checkbox" onChange={(e) => { addMast(e, mast) }}
                         className="custom__checkbox" /></div>
                 </div>
-                <div style={{ paddingTop: 2 }} className="chaild__stats__box" id="mndSub">
+                <div style={{ paddingTop: 2 }} className="chaild__stats__box" id={mndS}>
                     <div className="ch__st">{mndS}<label className="stat__name">спасброски</label><input type="checkbox" onChange={(e) => { addMast(e, mast, true) }}
                         className="custom__checkbox" /></div>
                     <div className="ch__st">{mndS}<label className="stat__name">животные</label><input type="checkbox" onChange={(e) => { addMast(e, mast) }}

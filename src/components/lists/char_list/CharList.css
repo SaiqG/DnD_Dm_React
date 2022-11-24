@@ -50,7 +50,6 @@
     background: none;
     border: none;
     font-family: 'Fuzzy Bubbles', cursive;
-    /* font-family: 'Josefin Sans', sans-serif; */
 }
 
 .stats__change {
@@ -64,14 +63,12 @@
     position: absolute;
     top: 64px;
     left: 37px;
-    /* z-index: 123; */
     justify-content: space-between;
     text-align: center;
 }
 
 .chaild__stats {
     position: absolute;
-    /* border: 1px solid #333; */
     height: 542px;
     width: 130px;
     top: 35px;
@@ -85,14 +82,12 @@
 }
 
 .chaild__stats__box {
-    /* border: 1px solid #333; */
     height: 16.6666%;
 }
 
 .ch__st {
     text-align: left;
     padding-top: 1px;
-    /* z-index: 155; */
     margin-left: 11px;
     position: relative;
 }
@@ -100,7 +95,6 @@
 .stat__name {
     position: absolute;
     left: 22px;
-    /* font-family: 'Josefin Sans', 'Fuzzy Bubbles'; */
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -225,29 +219,6 @@
     position: relative;
     transition: opacity 0.3s linear;
 }
-
-/* .checkmark::before{
-        content: "";
-        position: absolute;
-        height: 17px;
-        width: 17px;
-        opacity: 0;
-        border-radius: 50%;
-        transition: opacity 0.3s linear;
-        cursor: pointer;
-        background-color: rgba(160, 12, 12, 0.8);
-    }
-    .checkmark::after{
-        content: "";
-        position: absolute;
-        height: 17px;
-        width: 17px;
-        opacity: 0;
-        border-radius: 50%;
-        transition: opacity 0.3s linear;
-        cursor: pointer;
-        background-color: rgba(15, 241, 15, 0.527);
-    }  */
 
 
 .rolls__ind {
