@@ -63,7 +63,7 @@ function Monsters() {
                         <input type="text" className="mob__search" id="mob__search" placeholder="Search"
                          onChange={(e) => setSearchTerm(e.target.value)}/>
                     </form>
-                    <div className="mob__found" id="mob__found__list">
+                    <div className="mob__found">
                         {mobsList.slice(0, 6).map((mob, index) => {
                             if (searchTerm !== '') {
                                 return <dt key={index} id={mob.url} onClick={(e) => {setShowMob(e.target.id) ; cleanInput()}} className="search__res">{mob.name}</dt>
