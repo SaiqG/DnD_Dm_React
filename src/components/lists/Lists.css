@@ -1,0 +1,44 @@
+.list {
+    width: 100vh;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: left;
+    margin-top: 0px;
+    position: relative;
+    /* top: 0;
+    left: 0;
+    right: 0; */
+}
+
+.menu__item {
+    /* width: auto; */
+    opacity: 0.8;
+    margin: 10px;
+    transition: opacity 0.2s linear, filter 0.2s linear, transform 0.2s linear;
+    cursor: pointer;
+
+}
+
+.menu__item.active {
+    opacity: 1;
+    filter: drop-shadow(0 0 1px rgb(123, 8, 255));
+    transform: translate3d(0, 10px, 0);
+    transform: scale(1.15);
+
+}
+
+.menu__item:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 1px rgb(123, 8, 255));
+    transform: translate3d(0, 10px, 0);
+    transform: scale(1.15);
+    transition: opacity 0.2s linear, filter 0.2s linear, transform 0.2s linear;
+
+}
+
+.menu__icon {
+    height: 60px;
+}

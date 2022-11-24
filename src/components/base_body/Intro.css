@@ -1,0 +1,12 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    right: 50px;
+
+}
