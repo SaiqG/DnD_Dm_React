@@ -126,7 +126,7 @@ function CharList(show) {
                     <div className="ch__st">{mndS}<label className="stat__name">выживание</label><input type="checkbox" onChange={(e) => { addMast(e, mast) }}
                         className="custom__checkbox" /></div>
                 </div>
-                <div style={{ paddingTop: 7 }} className="chaild__stats__box" id="harSub">
+                <div style={{ paddingTop: 7 }} className="chaild__stats__box" id={harS}>
                     <div className="ch__st">{harS}<label className="stat__name">спасброски</label><input type="checkbox" onChange={(e) => { addMast(e, mast, true) }}
                         className="custom__checkbox" /></div>
                     <div className="ch__st">{harS}<label className="stat__name">обман</label><input type="checkbox" onChange={(e) => { addMast(e, mast) }}
